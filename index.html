@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web RTC</title>
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <h2>WebRTC A/V Preview</h2>
+      <button id="start" onclick="showAVPreview()">Show A/V preview</button>
+      <div class="av-preview">
+        <video id="video" autoplay muted></video>
+        <br />
+        <meter high="0.35" max="1" value="0" id="audio-meter"></meter>
+      </div>
+      <div class="av-devices">
+        <label>Microphone:</label><select id="mic"></select><br>
+        <label>Camera:</label><select id="camera"></select><br>
+        <label>Speaker:</label><select id="speaker"></select></select><br>
+
+        <div>
+
+          <audio title="local audio file" controls loop>
+            <source src="audio/audio.mp3" type="audio/mp3" />
+            This browser does not support the audio element.
+          </audio>
+          
+        </div>
+      </div>
+    </div>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="../util/devices_util.js"></script>
+    <script src="../util/mic_camera_util.js"></script>
+    <script src="../util/speaker_util.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>

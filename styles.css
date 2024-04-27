@@ -1,0 +1,29 @@
+.container {
+  margin-left: 30%;
+  max-width: 40%;
+}
+h2 {
+  text-align: center;
+}
+meter {
+  width: 100%;
+  display: none;
+}
+.av-preview {
+  padding: 20px;
+}
+#video {
+  max-width: 100%;
+}
+select {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+audio {
+  margin-top: 20px;
+  width: 100%;
+}
+.av-devices {
+  display: flex;
+  flex-direction: column;
+}

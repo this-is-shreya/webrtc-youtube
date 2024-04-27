@@ -1,6 +1,6 @@
-const micSelect = document.querySelector("select#mic");
-const speakerSelect = document.querySelector("select#speaker");
-const cameraSelect = document.querySelector("select#camera");
+// const micSelect = document.querySelector("select#mic");
+// const speakerSelect = document.querySelector("select#speaker");
+// const cameraSelect = document.querySelector("select#camera");
 
 const showDevices = async () => {
   const { mics, cameras, speakers } = await getDevices();
